@@ -55,4 +55,39 @@
             .booksTable td {
                 padding: 10px;
             }
+            .booksTable form {
+                margin-top: 12px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                
+            }
+            .booksTable form label{
+                font-size: 24px;
+                color: #898989;
+            }
+
+            .booksTable form span{
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                
+            }
+
+            .booksTable form input{
+                background: transparent;
+                margin-top: 3px;
+                padding: 0.5rem;
+                border-radius: 0.375rem;
+                color: white;
+            }
+            .booksTable form button{
+                font-weight: medium;
+                font-size: 16px;
+                background-color: #34d399;
+                padding-left: 8px;
+                padding-right: 8px;
+                border-radius: 4px;
+            }
+
             

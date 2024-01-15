@@ -77,6 +77,13 @@ function BooksTable(props) {
                                         {tableContent}
                                     </tbody>
                                 </table>
+                                <form>
+                                    <label>Chat</label>
+                                    <span>
+                                    <input placeholder='Enter your message here'/>
+                                    <button>Send</button>
+                                    </span>
+                                </form>
                                 </div>
                             );
                         }

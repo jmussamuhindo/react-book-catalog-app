@@ -24,7 +24,7 @@ class BookContextProvider extends Component {
         this.searchInputChangeHandler = this.searchInputChangeHandler.bind(this);
         this.setCurrentBookHandler    = this.setCurrentBookHandler.bind(this);
     }
-
+  
     addBookHandler(book) {
 
         let updatedBooks = [...this.state.books];
@@ -90,12 +90,12 @@ class BookContextProvider extends Component {
     }
 
     searchInputChangeHandler(event) {
-    
         this.setState(prevState => {
           return {
             searchValue: event.target.value
           }
         });
+        console.log(books)
     
     }
 

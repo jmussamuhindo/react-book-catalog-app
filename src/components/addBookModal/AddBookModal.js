@@ -114,7 +114,6 @@ function AddBookModal(props) {
                         year_published: yearPublishedValue,
                         genre: genreValue,
                         mood : moodValue,
-                        chat : chatValue
                     });
                     
                     //reset fields
@@ -125,7 +124,6 @@ function AddBookModal(props) {
                     yearPublishedResetHandler();
                     genreResetHandler();
                     moodResetHandler();
-                    chatResetHandler()
                 }
 
                 return (
@@ -219,7 +217,7 @@ function AddBookModal(props) {
                                 <button type="submit" className={`btnPrimary ${styles.btnPrimary}`} disabled={formIsValid ? false : true}>Submit</button>
                             </form>
                             <div className={`inputField ${chatHasError ? 'invalid' : ''} ${styles.inputField}`}>
-                                    <label htmlFor="chat-genre">Chat</label>
+                                    {/* <label htmlFor="chat-genre">Chat</label>
                                     <input 
                                         type="text" 
                                         id="chat-mood" 
@@ -227,7 +225,7 @@ function AddBookModal(props) {
                                         onBlur={chatBlurHandler}
                                         placeholder="Chat"
                                         value={chatValue}/>
-                                    <div className="vaildationMessage">{chatErrorMessage}</div>
+                                    <div className="vaildationMessage">{chatErrorMessage}</div> */}
                                 </div>
                         </div>
                     </Modal>

@@ -1,6 +1,6 @@
-import React from 'react';
 import styles from './SearchBook.module.css';
 import { BookContext } from '../../context/BookContext';
+
 
 function SearchBook(props) {
    
@@ -9,7 +9,8 @@ function SearchBook(props) {
         <BookContext.Consumer>{
 
             (context) => {
-                const {searchInputChangeHandler, searchValue} = context;
+                const {searchInputChangeHandler, searchValue, books} = context;
+              
 
                 return (
                     <div className={styles.searchBook}>
